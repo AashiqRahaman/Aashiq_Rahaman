@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background: #222;
+    background: #9cb165;
     padding: 1rem 2rem;
     color: #fff;
     position: sticky;
@@ -44,12 +44,24 @@ body {
 }
 
 .hero {
-    background: #00adb5;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     color: #fff;
     text-align: center;
     padding: 5rem 1rem;
 }
-
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50% ;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -138,6 +150,25 @@ body.dark .btn {
 
 body.dark .btn:hover {
     background: #444;
+}
+body.dark .hero  {
+        background: linear-gradient(-45deg, #9e2d0b, #490b23, #083342, #297261);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #d1a4a4;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50% ;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .toggle-btn {
