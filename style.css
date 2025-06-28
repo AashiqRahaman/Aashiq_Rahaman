@@ -44,6 +44,9 @@ body {
 .nav-links a:hover {
   color: #00adb5;
 }
+.logo{
+  height: 40px;
+}
 
 .hero {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
