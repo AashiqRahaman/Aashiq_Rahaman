@@ -1,29 +1,22 @@
-// Optional: Add interactivity or smooth scrolling
 document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const section = document.querySelector(this.getAttribute('href'));
-        section.scrollIntoView({ behavior: 'smooth' });
-    });
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.nav-links').classList.remove('show'); // close menu on mobile
+  });
 });
-
-
 
 document.getElementById('darkModeToggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-
-    // Optionally: store preference in localStorage
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
 });
 
-// Apply saved theme on page load
 window.addEventListener('DOMContentLoaded', () => {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark') {
-        document.body.classList.add('dark');
-    }
+  const theme = localStorage.getItem('theme');
+  if (theme === 'dark') document.body.classList.add('dark');
+});
+
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('show');
 });

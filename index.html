@@ -1,91 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/Logo.png">
-    <title>Aashiq_Rahaman</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aashiq Rahaman – Portfolio" />
+  <meta property="og:title" content="Aashiq Rahaman – Portfolio" />
+  <meta property="og:description" content="Web Developer | Designer" />
+  <meta property="og:image" content="assets/Logo.png" />
+  <meta property="og:type" content="website" />
+  <title>Aashiq_Rahaman</title>
+  <link rel="icon" href="assets/Logo.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body oncontextmenu="return false">
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">Aashiq</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="darkModeToggle" class="btn toggle-btn">🌙</button>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Aashiq</div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" class="btn toggle-btn">🌙</button>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
+  <main>
+    <section class="hero">
+      <h1>Hello, I'm Aashiq Rahaman</h1>
+      <div class="hero-inner">
+        <div class="my-img"></div>
+        <a href="#"><img src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=%237E3ACE&size=30&center=true&vCenter=true&width=450&lines=Hi👋+I'm+Aashiq+Rahaman;Welcome+to+My+Profile;A+Student+of+Computer+Engineering" alt="Typing" class="typing" /></a>
+        <p>Frontend Developer & Designer</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <h1>Hello, I'm Aashiq Rahaman</h1>
-            <div align="center">
-                <div class="my-img">
-                    <div align="right"></div>
-                </div>
-                <a href="https://git.io/typing-svg"><img
-                    src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=%237E3ACE&size=30&center=true&vCenter=true&width=450&lines=Hi👋+I'm+Aashiq+Rahaman;Welcome+to+My+Profile;A+Student+of+Computer+Engineering"
-                    alt="Computer Engineering Student, Brazilian front-end developer, Power Metal lover"></a>
-                <p>Frontend Developer & Designer </p>
-                <a href="#projects" class="btn">View Projects</a>
-        </section>
-
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Passionate Web Developer with hands-on experience in building and deploying web applications. Skilled in
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Passionate Web Developer with hands-on experience in building and deploying web applications. Skilled in
                 front-end and back-end development using JavaScript, HTML/CSS, and Firebase. Enthusiastic about learning
                 new technologies and solving real-world problems.Passionate about solving real-world problems through
                 code and actively building personal projects. Seeking internship or entry-level opportunities to
                 contribute and grow in a collaborative tech environment. Dedicated to writing clean code, improving user
                 experience, and continuously upskilling through self-driven projects and online courses.</p>
-        </section>
+    </section>
 
-        <section id="resume" class="section">
-            <h2>My Resume</h2>
-            <p>Click below to download my resume and CV.</p>
-            <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
-        </section>
+    <section id="resume" class="section">
+      <h2>My Resume</h2>
+      <p>Click below to download my resume and CV.</p>
+      <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+    </section>
 
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>University Resource Portal</h3>
-                    <p>Built a full-stack website for university students to upload and access department-wise previous
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>University Resource Portal</h3>
+          <p>Built a full-stack website for university students to upload and access department-wise previous
                         year question papers. Integrated user authentication, file uploads, and admin moderation using
                         Firebase.</p>
-                </div>
-
-                <div class="project-card">
-                    <a href="">
-                        <h3>Portfolio Website</h3>
-                    </a>
-                    <p>Created a responsive personal portfolio using HTML, CSS, and JavaScript. Hosted on GitHub Pages.
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Created a responsive personal portfolio using HTML, CSS, and JavaScript. Hosted on GitHub Pages.
                         Features projects, resume, and contact form.</p>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: aashiqrahaman0@gmail.com</p>
-        </section>
-    </main>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: aashiqrahaman0@gmail.com</p>
+    </section>
+  </main>
 
-    <footer class="footer">
-        <p>&copy; 2025 Aashiq Rahaman. All rights reserved.</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2025 Aashiq Rahaman. All rights reserved.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

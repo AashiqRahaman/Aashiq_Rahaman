@@ -1,224 +1,234 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .header {
-    background: #9cb165;
-    padding: 1rem 2rem;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: #9cb165;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00adb5;
+  color: #00adb5;
 }
 
 .hero {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    color: #fff;
-    text-align: center;
-    padding: 5rem 1rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
 }
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50% ;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.typing {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background: #fff;
-    color: #00adb5;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #fff;
+  color: #00adb5;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-    background: #f8f8f8;
+  background: #f8f8f8;
 }
 
 .section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .project-card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
 }
 
+.my-img {
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(https://avatars.githubusercontent.com/u/156484668?v=4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 12rem;
+  width: 12rem;
+  transition: all 3s ease-in-out;
+}
 
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+}
 
-/* for dark mode */
-/* Dark Mode */
+/* Dark mode */
 body.dark {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
 }
 
 body.dark .header,
 body.dark .footer {
-    background-color: #111;
+  background-color: #111;
 }
 
 body.dark .navbar a {
-    color: #ccc;
+  color: #ccc;
 }
 
 body.dark .navbar a:hover {
-    color: #00adb5;
+  color: #00adb5;
 }
 
 body.dark .project-card {
-    background: #2c2c2c;
-    color: #f5f5f5;
+  background: #2c2c2c;
 }
 
 body.dark .btn {
-    background: #333;
-    color: #00adb5;
+  background: #333;
+  color: #00adb5;
 }
 
 body.dark .btn:hover {
-    background: #444;
+  background: #444;
 }
-body.dark .hero  {
-        background: linear-gradient(-45deg, #9e2d0b, #490b23, #083342, #297261);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    color: #d1a4a4;
+
+body.dark .hero {
+  background: linear-gradient(-45deg, #9e2d0b, #490b23, #083342, #297261);
+  color: #d1a4a4;
+}
+
+/* Responsive */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background: #9cb165;
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    padding: 5rem 1rem;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .my-img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50% ;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.toggle-btn {
-    margin-left: 1rem;
-    background: transparent;
-    border: 2px solid #fff;
-    padding: 0.4rem 0.8rem;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-
-/* myimage */
-.my-img {
-    -webkit-animation: morph 8s ease-in-out infinite;
-    animation: morph 8s ease-in-out infinite;
-    background-image: url(https://avatars.githubusercontent.com/u/156484668?v=4);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid #2d2e32;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    height: 15rem;
-    position: relative;
-    transition: all 3s ease-in-out;
-    width: 15rem;
-
-}
-
-@keyframes morph {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-}
-
-/* .body {
-    background-image: url(https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg?w=996&t=st=1706205498~exp=1706206098~hmac=c1f8c811c5c3e2d2febd245df64b5270f8f7e45d6fdfd1122f0adc06ee135e73);
-    background-repeat: repeat;
-    background-size: cover;
-
-
-} */
