@@ -95,6 +95,28 @@ body {
   font-weight: bold;
   transition: background 0.3s;
 }
+.toggle-btn {
+  display: inline-block;
+  padding: 0.5rem .5rem;
+  background: #fff;
+  color: #00adb5;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.toggle-btn:hover {
+  display: inline-block;
+  padding: 0.5rem .5rem;
+  background: #614747;
+  color: #47d888;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
 
 .btn:hover {
   background: #f8f8f8;
