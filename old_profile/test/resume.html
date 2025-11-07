@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - Aashiq Rahaman</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font (Tailwind default) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 'page-resume' class highlights the 'Resume' nav link -->
+<body class="page-resume bg-gradient-to-br from-white to-gray-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 min-h-screen antialiased transition-colors duration-300">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 transition-all duration-300 hover:drop-shadow-[0_0_5px_rgba(79,70,229,0.5)] dark:hover:drop-shadow-[0_0_5px_rgba(129,140,248,0.5)]">Aashiq Rahaman</span>
+                </a>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">About</a>
+                    <a href="projects.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">Projects</a>
+                    <!-- New Link Added -->
+                    <a href="certificates.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">Certificates</a>
+                    <a href="resume.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">Resume</a>
+                    <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300">Contact</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="dark-mode-toggle" class="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300" aria-label="Toggle dark mode">
+                        <svg id="theme-icon-sun" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-8.66l-.7.7M4.04 4.04l-.7.7M21 12h-1M4 12H3m16.96-4.96l-.7.7M4.04 19.96l-.7.7M12 20.36A8.36 8.36 0 013.64 12 8.36 8.36 0 0112 3.64 8.36 8.36 0 0120.36 12 8.36 8.36 0 0112 20.36z" />
+                        </svg>
+                        <svg id="theme-icon-moon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <div class="md:hidden ml-2">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">Home</a>
+                <a href="about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">About</a>
+                <a href="projects.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">Projects</a>
+                <!-- New Link Added -->
+                <a href="certificates.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">Certificates</a>
+                <a href="resume.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">Resume</a>
+                <a href="contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <!-- This is the content from the OLD <section id="resume"> -->
+        <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 p-8 md:p-12 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-500/20 dark:hover:shadow-indigo-400/10">
+            <!-- Header & CTA -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                <div>
+                    <h1 class="text-4xl font-bold">Aashiq Rahaman</h1>
+                    <p class="text-xl text-indigo-600 dark:text-indigo-400">Aspiring Software Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">aashiqrahaman0@gmail.com | 8768469976 | Kolkata, WB, India</p>
+                </div>
+                <div class="flex gap-4 mt-6 md:mt-0">
+                    <a href="contact.html" class="px-5 py-2.5 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/40 dark:hover:shadow-indigo-400/30 hover:-translate-y-1">
+                        Hire Me
+                    </a>
+                    <a href="My_Resume.pdf" download="AashiqRahaman_Resume.pdf" class="px-5 py-2.5 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 font-medium rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 hover:shadow-lg hover:shadow-gray-500/40 dark:hover:shadow-gray-400/30 hover:-translate-y-1">
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-3 border-b-2 border-indigo-200 dark:border-gray-700 pb-2">Summary</h2>
+                <p>Aspiring Software Engineer and AI Engineer with expertise in full-stack web development and AI/Machine Learning. Proficient in technologies including React.js, Node.js, Python, and TensorFlow. Demonstrated strong problem-solving and DSA skills by solving 100+ algorithmic challenges on LeetCode. Seeking to apply these skills to build scalable, cloud-ready applications and contribute to innovative AI-driven solutions.</p>
+            </section>
+
+            <!-- Experience / Key Projects -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-200 dark:border-gray-700 pb-2">Experience / Key Projects</h2>
+                <div class="space-y-6">
+                    <!-- Project 1 -->
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-semibold">University Resource Portal</h3>
+                            <span class="text-gray-600 dark:text-gray-400">Academic Project</span>
+                        </div>
+                        <p class="text-lg font-medium text-indigo-600 dark:text-indigo-400">Full-Stack Developer</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>Engineered a full-stack web portal using React.js, Node.js, and MongoDB to streamline access to academic resources.</li>
+                            <li>Implemented a secure user authentication system and built optimised REST APIs to ensure smooth and reliable performance.</li>
+                        </ul>
+                    </div>
+                    <!-- Project 2 -->
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-semibold">Deepfake Detection Model</h3>
+                            <span class="text-gray-600 dark:text-gray-400">Academic Project</span>
+                        </div>
+                        <p class="text-lg font-medium text-indigo-600 dark:text-indigo-400">ML Engineer</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>Developed and trained a CNN model with TensorFlow and OpenCV to detect deepfake images and videos, using 5,500+ real and 6,000+ fake facial frames.</li>
+                            <li>Built a preprocessing pipeline (face detection, frame normalization) that improved model performance; achieved 95% accuracy on a custom test set.</li>
+                        </ul>
+                    </div>
+                    <!-- Project 3 -->
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-semibold">Secure Image Encryption</h3>
+                            <span class="text-gray-600 dark:text-gray-400">Academic Project</span>
+                        </div>
+                        <p class="text-lg font-medium text-indigo-600 dark:text-indigo-400">Python Developer</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1">
+                            <li>Researched and implemented conversion of medical images to JPEG 2000 and integrated AES encryption for secure storage and transmission.</li>
+                            <li>Wrote Python scripts to encrypt, decrypt, and verify image integrity, reducing unauthorized-access risk.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Achievements & Certifications -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-200 dark:border-gray-700 pb-2">Achievements & Certifications</h2>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>Solved 100+ algorithmic problems on <a href="https://leetcode.com/Aashiq_Rahaman01" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline">LeetCode</a>.</li>
+                    <li>Participation in Hackathon (Mar 2024).</li>
+                    <li>IBM Certified in Python for Data Science and Prompt Engineering for Everyone (Aug 2025).</li>
+                </ul>
+                <!-- New Button Added -->
+                <div class="mt-4">
+                    <a href="certificates.html" class="px-5 py-2.5 bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 font-medium rounded-lg hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
+                        View All Certificates
+                    </a>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-200 dark:border-gray-700 pb-2">Education</h2>
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-xl font-semibold">Bachelor of Technology, Computer Science</h3>
+                        <span class="text-gray-600 dark:text-gray-400">Oct 2022 - Present</span>
+                    </div>
+                    <p class="text-lg font-medium text-indigo-600 dark:text-indigo-400">Maulana Abul Kalam Azad University of Technology, WB</p>
+                    <p class="mt-1">GPA: 8.1/10 (Till 6th semester)</p>
+                </div>
+                <div class="mt-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-xl font-semibold">Higher Secondary Board Exam (WBCHSE)</h3>
+                        <span class="text-gray-600 dark:text-gray-400">Apr 2018 - Apr 2020</span>
+                    </div>
+                    <p class="text-lg font-medium text-indigo-600 dark:text-indigo-400">West Bengal Council of Higher Secondary Education</p>
+                    <p class="mt-1">Percentage: 85.80%</p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h2 class="text-2xl font-semibold mb-3 border-b-2 border-indigo-200 dark:border-gray-700 pb-2">Technical Skills</h2>
+                <p><strong>Languages:</strong> C, Python, Java, JavaScript</p>
+                <p><strong>Web Development:</strong> HTML5, CSS3, Bootstrap, Node.js, MongoDB, React.js, MySQL, Tailwind CSS</p>
+                <p><strong>Machine Learning:</strong> NumPy, Pandas, Scikit-learn, Matplotlib, OpenCV, TensorFlow</p>
+                <p><strong>Tools:</strong> Git, GitHub, VS Code, Netlify, Postman</p>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-8">
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center">
+            <p class="text-gray-500 dark:text-gray-400">
+                &copy; 2024 Aashiq Rahaman. All rights reserved.
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                Designed with <span class="text-red-500">&hearts;</span> and <a href="https://tailwindcss.com/" class="text-indigo-600 dark:text-indigo-400 hover:underline">Tailwind CSS</a>.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Dummy Modals (for JS to not error) -->
+    <div id="project-modal"></div>
+    <div id="certificate-modal"></div>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
