@@ -14,8 +14,8 @@ const projects = [
         tags: ['React.js', 'Node.js', 'MongoDB', 'Tailwind CSS'],
         image: 'https://placehold.co/600x400/6366f1/white?text=University+Portal',
         problem: 'Students lacked a centralized, easy-to-use platform for accessing academic resources like notes, past papers, and syllabi.',
-        role: 'Full-Stack Developer (Academic Project)',
-        timeline: 'Academic Project',
+        role: 'Full-Stack Developer (Personal Project)',
+        timeline: 'Personal Project',
         tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT Authentication'],
         architectureImg: 'https://placehold.co/600x300/333/white?text=Client/Server/DB+Diagram',
         challenges: 'Engineered a full-stack web portal from the ground up. The primary challenges involved implementing a secure user authentication system using JSON Web Tokens (JWT) and building a suite of optimised REST APIs with Node.js and Express to ensure smooth and reliable data transfer between the React front-end and MongoDB database.',
@@ -28,12 +28,12 @@ app.get('/api/resources/:subject', authenticateToken, async (req, res) => {
         res.status(500).json({ message: 'Error fetching resources.' });
     }
 });`,
-        demoImg: 'https://placehold.co/600x400/9ca3af/white?text=Portal+Screenshot',
+        demoImg: 'https://placehold.co/600x400/9ca3af/white?text=Portal+Under+Development',
         results: 'Successfully engineered and deployed a full-stack web portal that streamlines access to academic resources, featuring secure authentication and optimized API performance.',
         lessons: 'Gained hands-on experience in full-stack MERN development, API design, and user authentication.',
         nextSteps: 'Add features like a forum for students and real-time notifications.',
         links: {
-            repo: 'https://github.com/AashiqRahaman/P'
+            repo: 'https://github.com/AashiqRahaman/PYQ-Portal'
         }
     },
     {
@@ -48,29 +48,15 @@ app.get('/api/resources/:subject', authenticateToken, async (req, res) => {
         tech: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy', 'Scikit-learn', 'Matplotlib'],
         architectureImg: 'https://placehold.co/600x300/333/white?text=CNN+Model+Architecture',
         challenges: 'A key challenge was building a robust data preprocessing pipeline. This involved using OpenCV for face detection from video frames, normalizing the facial frames, and augmenting the data to prevent overfitting. The model was trained on a large dataset of over 5,500 real and 6,000 fake facial frames.',
-        codeSnippet: `// Example: TensorFlow/Keras CNN Model Snippet
-model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 3)),
-    MaxPooling2D(2, 2),
-    
-    Conv2D(64, (3, 3), activation='relu'),
-    MaxPooling2D(2, 2),
-    
-    Flatten(),
-    Dense(128, activation='relu'),
-    Dropout(0.5),
-    Dense(1, activation='sigmoid') // Output layer (Real or Fake)
-])
-
-model.compile(optimizer='adam',
-              loss='binary_crossentropy',
-              metrics=['accuracy'])`,
+        codeSnippet: `
+        // Example: TensorFlow/Keras CNN Model Snippet
+        https://github.com/AashiqRahaman/DeepFake_Detection_Final_Year_College_Project`,
         demoImg: 'https://placehold.co/600x400/9ca3af/white?text=Real+vs+Fake+Demo',
         results: 'The final CNN model achieved 95% accuracy on a custom test set of 1,200 real and 1,200 fake frames, demonstrating a strong ability to distinguish between authentic and manipulated media.',
         lessons: 'Gained deep experience in building and training computer vision models, data preprocessing pipelines for image/video data, and evaluating model performance.',
         nextSteps: 'Improve the model to detect more subtle deepfakes and test on real-time video streams.',
         links: {
-            repo: 'https://github.com/AashiqRahaman/Deepfake' // Note: Used shorter link from resume
+            repo: 'https://github.com/AashiqRahaman/DeepFake_Detection_Final_Year_College_Project' // Note: Used shorter link from resume
         }
     },
     {
@@ -85,30 +71,15 @@ model.compile(optimizer='adam',
         tech: ['Python', 'AES (pycryptodome)', 'JPEG 2000', 'NumPy'],
         architectureImg: 'https://placehold.co/600x300/333/white?text=Encryption/Decryption+Flow',
         challenges: 'Researched and implemented the conversion of standard medical images (like DICOM or PNG) into the JPEG 2000 format. The main task was writing Python scripts to correctly implement AES encryption/decryption, verify image integrity after decryption, and handle key management.',
-        codeSnippet: `// Example: Python AES Encryption Snippet
-from Crypto.Cipher import AES
-from Crypto.Random import get_random_bytes
-import os
-
-def encrypt_image(file_path, key):
-    with open(file_path, 'rb') as f:
-        data = f.read()
-    
-    cipher = AES.new(key, AES.MODE_EAX)
-    nonce = cipher.nonce
-    ciphertext, tag = cipher.encrypt_and_digest(data)
-    
-    with open(file_path + '.enc', 'wb') as f:
-        f.write(nonce)
-        f.write(tag)
-        f.write(ciphertext)
-`,
+        codeSnippet: `
+        // Example: Python AES Encryption Snippet
+        https://github.com/AashiqRahaman/AES_Image_Encryption_College_Project`,
         demoImg: 'https://placehold.co/600x400/9ca3af/white?text=Encrypted+Image+Data',
         results: 'Successfully wrote Python scripts to encrypt, decrypt, and verify image integrity, significantly reducing the risk of unauthorized access. Conducted performance analysis on image quality (post-decryption) and encryption time to find the optimal trade-off between fidelity and performance.',
         lessons: 'Learned the fundamentals of symmetric encryption, the importance of data integrity checks (using tags), and file I/O operations in Python.',
         nextSteps: 'Integrate this encryption module into a larger medical records management system.',
         links: {
-            repo: 'https://github.com/AashiqRahaman/AES' // Note: Used shorter link from resume
+            repo: 'https://github.com/AashiqRahaman/AES_Image_Encryption_College_Project' // Note: Used shorter link from resume
         }
     }
 ];
@@ -130,23 +101,23 @@ const certificates = [
         issuer: 'IBM',
         date: 'Aug 2025',
         image: 'https://placehold.co/800x600/6366f1/white?text=Python+for+Data+Science+Cert',
-        verify: 'https://courses.cognitiveclass.ai/certificates/el...' // Truncated from resume
+        verify: 'https://courses.cognitiveclass.ai/certificates/e1d37784a806471eb5c494208896ac26' // Truncated from resume
     },
     {
         id: 'cert2',
         title: 'Prompt Engineering for Everyone',
         issuer: 'IBM',
         date: 'Aug 2025',
-        image: 'https://placehold.co/800x600/10b981/white?text=Prompt+Engineering+Cert',
-        verify: 'https://courses.cognitiveclass.ai/certificates/54a'
+        image: 'Ar.png',
+        verify: 'https://courses.cognitiveclass.ai/certificates/54a174d6f03e45bcaf1ff61d7d5c6989'
     },
     {
         id: 'cert3',
         title: 'Hackathon Participation',
         issuer: 'Give My Certificate',
         date: 'Mar 2024',
-        image: 'https://placehold.co/800x600/f59e0b/white?text=Hackathon+Cert',
-        verify: 'https://verification.givemycertificate.com/df27dd54...' // Truncated from resume
+        image: 'assets/Images/HACKAUT.jpg',
+        verify: 'https://verification.givemycertificate.com/v/df27dd54-c5f4-41cb-8a99-53690866e79a' // Truncated from resume
     }
 ];
 
@@ -168,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const sunIcon = document.getElementById('theme-icon-sun');
     const moonIcon = document.getElementById('theme-icon-moon');
-    
+
     // --- SELECTORS (PROJECTS) ---
     const projectsGrid = document.getElementById('projects-grid');
     const projectModal = document.getElementById('project-modal');
@@ -176,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectModalTitle = document.getElementById('modal-title');
     const projectModalContent = document.getElementById('modal-content-container');
     const projectModalFooter = document.getElementById('modal-footer');
-    
+
     // --- SELECTORS (CAROUSEL) ---
     const carouselContainer = document.getElementById('featured-carousel');
     const carouselPrevBtn = document.getElementById('carousel-prev');
@@ -194,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const certModalImage = document.getElementById('cert-modal-image');
     const certModalFooter = document.getElementById('cert-modal-footer');
 
-    
+
     // --- DARK MODE (RUNS ON ALL PAGES) ---
 
     /**
@@ -238,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initDarkMode();
 
     // --- MOBILE MENU (RUNS ON ALL PAGES) ---
-    
+
     // If the mobile menu button exists, add a click listener.
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', () => {
@@ -263,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (closeIcon) closeIcon.classList.add('hidden');
         if (mobileMenuButton) mobileMenuButton.setAttribute('aria-expanded', 'false');
     }
-    
+
     // Find all mobile nav links and add a click listener to close the menu
     document.querySelectorAll('.mobile-nav-link').forEach(link => {
         link.addEventListener('click', () => {
@@ -283,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const project = projects.find(p => p.id === projectId);
         // If no project is found or the modal element doesn't exist, do nothing.
         if (!project || !projectModal) return;
-        
+
         // 1. Set the modal title
         if (projectModalTitle) projectModalTitle.textContent = project.title;
 
@@ -340,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectModalFooter.innerHTML += `<a href="${project.links.case}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-indigo-600 dark:text-indigo-400 font-medium rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1">Full Case Study</a>`;
             }
         }
-        
+
         // 5. Show the modal and block background scrolling
         projectModal.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -363,14 +334,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projectModal && projectModalCloseBtn) {
         // 1. Close button click
         projectModalCloseBtn.addEventListener('click', hideProjectModal);
-        
+
         // 2. Click outside the modal content (on the backdrop)
         projectModal.addEventListener('click', (e) => {
             if (e.target === projectModal) {
                 hideProjectModal();
             }
         });
-        
+
         // 3. 'Escape' key press
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && projectModal.classList.contains('active')) {
@@ -381,18 +352,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- PROJECT POPULATION (RUNS ONLY ON PROJECTS.HTML) ---
-    
+
     // This `if` block ensures this code only runs if the '#projects-grid' element
     // is on the current page. This prevents errors on other pages.
     if (projectsGrid) {
         projectsGrid.innerHTML = ''; // Clear existing (e.g., if any static content was there)
-        
+
         // Loop through all projects in the data array
         projects.forEach(project => {
             // Create a new <div> element for the card
             const card = document.createElement('div');
             card.className = 'bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-700 flex flex-col transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-indigo-500/30 dark:hover:shadow-indigo-400/20';
-            
+
             // Build the tag HTML
             const tagsHTML = project.tags.map(tag =>
                 `<span class="text-xs font-medium bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 px-2.5 py-0.5 rounded-full">${tag}</span>`
@@ -410,12 +381,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     </button>
                 </div>
             `;
-            
+
             // Add a click listener to the new card's button
             card.querySelector('.project-details-btn').addEventListener('click', () => {
                 showProjectModal(project.id);
             });
-            
+
             // Append the new card to the grid
             projectsGrid.appendChild(card);
         });
@@ -423,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- FEATURED CAROUSEL (RUNS ONLY ON INDEX.HTML) ---
-    
+
     // This `if` block ensures this code only runs if the '#featured-carousel'
     // element is on the current page (index.html).
     if (carouselContainer) {
@@ -432,14 +403,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let featuredProjects = projects;
 
         carouselContainer.innerHTML = ''; // Clear any static content
-        
+
         // Create a 'slide' for each featured project
         featuredProjects.forEach((project, index) => {
             const slide = document.createElement('div');
             slide.className = 'carousel-slide';
             // Make the first slide 'active'
             if (index === 0) slide.classList.add('active');
-            
+
             slide.innerHTML = `
                 <div class="text-center">
                     <h3 class="text-2xl font-semibold">${project.title}</h3>
@@ -450,12 +421,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     </button>
                 </div>
             `;
-            
+
             // Add click listener to this slide's button to open the modal
             slide.querySelector('.project-details-btn').addEventListener('click', () => {
                 showProjectModal(project.id);
             });
-            
+
             carouselContainer.appendChild(slide);
         });
 
@@ -469,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 slide.classList.toggle('active', i === index);
             });
         };
-        
+
         // Show the initial (first) slide
         showSlide(currentSlide);
 
@@ -493,23 +464,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- CONTACT FORM (RUNS ONLY ON CONTACT.HTML) ---
-    
+
     // This `if` block ensures this code only runs if the '#contact-form'
     // element is on the current page (contact.html).
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault(); // Prevent the default form submission (page reload)
-            
+
             // In a real application, you would send this data to a backend API
             // or a service like Formspree, Netlify Forms, etc.
             // For this demo, we just show a success message.
-            
+
             if (formStatus) {
                 formStatus.textContent = 'Thank you for your message! I will get back to you soon.';
                 formStatus.classList.remove('hidden');
             }
             contactForm.reset(); // Clear the form fields
-            
+
             // Hide the status message after 5 seconds
             setTimeout(() => {
                 if (formStatus) formStatus.classList.add('hidden');
@@ -529,7 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Set modal title
         if (certModalTitle) certModalTitle.textContent = cert.title;
-        
+
         // 2. Set modal image source
         if (certModalImage) {
             certModalImage.src = cert.image;
@@ -543,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 certModalFooter.innerHTML = `<a href="${cert.verify}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-500/40">Verify Certificate</a>`;
             }
         }
-        
+
         // 4. Show modal
         certModal.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -564,14 +535,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (certModal && certModalCloseBtn) {
         // 1. Close button click
         certModalCloseBtn.addEventListener('click', hideCertificateModal);
-        
+
         // 2. Click outside modal
         certModal.addEventListener('click', (e) => {
             if (e.target === certModal) {
                 hideCertificateModal();
             }
         });
-        
+
         // 3. 'Escape' key press
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && certModal.classList.contains('active')) {
@@ -586,11 +557,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // element is on the current page.
     if (certificatesGrid) {
         certificatesGrid.innerHTML = ''; // Clear existing
-        
+
         certificates.forEach(cert => {
             const card = document.createElement('div');
             card.className = 'bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-700 flex flex-col transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-indigo-500/30 dark:hover:shadow-indigo-400/20';
-            
+
             card.innerHTML = `
                 <!-- Use a cropped version of the cert image for the card -->
                 <img src="${cert.image.replace('800x600', '600x400')}" alt="${cert.title}" class="w-full h-48 object-cover">
@@ -609,12 +580,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `;
-            
+
             // Add click listener to the new card's "Preview" button
             card.querySelector('.cert-preview-btn').addEventListener('click', () => {
                 showCertificateModal(cert.id);
             });
-            
+
             certificatesGrid.appendChild(card);
         });
     }
