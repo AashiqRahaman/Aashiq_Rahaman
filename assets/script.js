@@ -100,7 +100,7 @@ const certificates = [
         title: 'Python for Data Science',
         issuer: 'IBM',
         date: 'Aug 2025',
-        image: 'https://placehold.co/800x600/6366f1/white?text=Python+for+Data+Science+Cert',
+        image: 'https://raw.githubusercontent.com/AashiqRahaman/Aashiq_Rahaman/main/assets/Images/IBMPY0101EN.jpg',
         verify: 'https://courses.cognitiveclass.ai/certificates/e1d37784a806471eb5c494208896ac26' // Truncated from resume
     },
     {
@@ -108,7 +108,7 @@ const certificates = [
         title: 'Prompt Engineering for Everyone',
         issuer: 'IBM',
         date: 'Aug 2025',
-        image: 'Ar.png',
+        image: 'https://raw.githubusercontent.com/AashiqRahaman/Aashiq_Rahaman/main/assets/Images/IBMAI0117EN.jpg',
         verify: 'https://courses.cognitiveclass.ai/certificates/54a174d6f03e45bcaf1ff61d7d5c6989'
     },
     {
@@ -116,7 +116,7 @@ const certificates = [
         title: 'Hackathon Participation',
         issuer: 'Give My Certificate',
         date: 'Mar 2024',
-        image: 'assets/Images/HACKAUT.jpg',
+        image: 'https://raw.githubusercontent.com/AashiqRahaman/Aashiq_Rahaman/main/assets/Images/HACKAUT.jpg',
         verify: 'https://verification.givemycertificate.com/v/df27dd54-c5f4-41cb-8a99-53690866e79a' // Truncated from resume
     }
 ];
